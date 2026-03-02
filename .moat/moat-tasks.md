@@ -1,6 +1,6 @@
 # Moat Tasks
 
-**Total**: 87 | **To Do**: 0 | **Doing**: 0 | **Done**: 87
+**Total**: 100 | **To Do**: 0 | **Doing**: 0 | **Done**: 100
 
 ## Tasks
 
@@ -91,8 +91,21 @@
 85. [x] Container #w-node-_9d5b8bca-7a75-36d2-5e5f-c2cd0527f4d2-e5bcab26 – "change image with world_section_1" `#w-node-_9d5b8bca-7a75-36d2-5e5f-c2cd0527f4d2-e5bcab26`
 86. [x] Container #w-node-_9d5b8bca-7a75-36d2-5e5f-c2cd0527f4d2-e5bcab26 – "Replace image with world_section_1 from img folder" `#w-node-_9d5b8bca-7a75-36d2-5e5f-c2cd0527f4d2-e5bcab26`
 87. [x] Container #w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26 – "Replace image with world_section_2 from img folder" `#w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26`
+88. [x] Container #w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26 – "Replace image with world_section_2 from img folder" `#w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26`
+89. [x] Container #div-8859346f – "Replace image with WEB_Banner_cta.jpg from img folder" `#div-8859346f`
+90. [x] Image: Haul of Famer – "These needs to be background less and 50% bigger" `#img-be73332b`
+91. [x] Container #div-bb05aa58 – "Add image of the botton of this holo_HOF.png, 350 px widt..." `#div-bb05aa58`
+92. [x] Image: The Starter – "Remove the circle in the icon and dont frame it. Use the ..." `#img-5bb4a19c`
+93. [x] Container #w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26 – "Add image here of world_section_2 .jpgfrom img folder" `#w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26`
+94. [x] Image: Haul of Fame Holographic Logo – "slant it around 20 deg and increase size by 20%" `#img-holo-hof`
+95. [x] Container #w-node-_7fa422e5-b3ef-6e8e-573c-872c6b5a18d2-e5bcab26 – "All text should be in white including the slash" `#w-node-_7fa422e5-b3ef-6e8e-573c-872c6b5a18d2-e5bcab26`
+96. [x] Image: Haul of Fame Holographic Logo – "Tilt back around 10 deg clockwise" `#img-holo-hof`
+97. [x] Image: Haul of Famer – "make icon larger by 200% all icons from the pricing butto..." `#img-be73332b`
+98. [x] Container #div-28d87f82 – "reduce the size of button height. And reduce the size of ..." `#div-28d87f82`
+99. [x] Container #qz-carousel-dots – "The dots are overlapping on the text. Lower this from the..." `#qz-carousel-dots`
+100. [x] Image: Haul of Fame – "Increase the site by 250px width with fix ration" `div.qz-step-content > div.qz-logo:nth-child(1) > img`
 
 ---
 
-_Generated: 2/28/2026, 3:14:35 AM_
+_Generated: 3/3/2026, 3:23:13 AM_
 _Source: moat-tasks-detail.json_

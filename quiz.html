@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Quiz | Haul of Fame</title>
+  <meta name="description" content="Take the Haul of Fame StyleDNA quiz and discover your perfect subscription plan." />
+  <link href="imgs/Starter.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="imgs/Starter.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="css/quiz.css" rel="stylesheet" />
+</head>
+<body id="qz-body">
+
+  <!-- Progress Bar -->
+  <div id="qz-progress-bar">
+    <div id="qz-progress-fill"></div>
+  </div>
+
+  <!-- Back Button (global, shown on steps 1+) -->
+  <button id="qz-back-btn" class="qz-back-btn" aria-label="Go back" style="display:none;">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 16L7 10L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Main Container -->
+  <div id="qz-container">
+
+    <!-- ============================================
+         STEP 0: INTRO CAROUSEL (6 slides)
+         ============================================ -->
+    <section id="qz-carousel" class="qz-step" data-step="0">
+      <div class="qz-step-content">
+        <div class="qz-logo"><img src="imgs/Logo_PNG_Colored_HOF.png" alt="Haul of Fame" /></div>
+        <div id="qz-carousel-swiper" class="swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1: Brand Network -->
+            <div class="swiper-slide">
+              <h1 class="qz-headline">You don't need to become a fashion expert. We are.</h1>
+              <div class="qz-img-placeholder" id="qz-slide-img-1">
+                <span>Brand Network Image</span>
+              </div>
+              <p class="qz-carousel-text">Over ten years curating for 704K+ guys. We've learned what works, what doesn't, and what makes the difference.</p>
+            </div>
+
+            <!-- Slide 2: Curation -->
+            <div class="swiper-slide">
+              <h1 class="qz-headline">We Show You Options. You Choose What Ships.</h1>
+              <div class="qz-img-placeholder" id="qz-slide-img-2">
+                <span>Clothing Options Image</span>
+              </div>
+              <p class="qz-carousel-text">See everything before it ships. Swap anything you don't like.</p>
+            </div>
+
+            <!-- Slide 3: Feedback -->
+            <div class="swiper-slide">
+              <h1 class="qz-headline">Every Choice You Make Teaches Us More About You.</h1>
+              <div class="qz-img-placeholder" id="qz-slide-img-3">
+                <span>Feedback Loop Image</span>
+              </div>
+              <p class="qz-carousel-text">704K+ guys have taught us patterns. Your feedback makes our recommendations smarter. You get better style, we get better at helping you.</p>
+            </div>
+
+            <!-- Slide 4: Value -->
+            <div class="swiper-slide">
+              <h1 class="qz-headline">Better Style Shouldn't Cost a Fortune or Feel Scary.</h1>
+              <div class="qz-img-placeholder" id="qz-slide-img-4">
+                <span>Membership Value Image</span>
+              </div>
+              <p class="qz-carousel-text">We cut out middlemen and partner directly with brands, passing the savings to you. Preview everything before it ships. Cancel anytime. You're in complete control.</p>
+            </div>
+
+            <!-- Slide 5: Transformation -->
+            <div class="swiper-slide">
+              <h1 class="qz-headline">"I Have Nothing to Wear" to "I Always Look Good."</h1>
+              <div class="qz-img-placeholder" id="qz-slide-img-5">
+                <span>Before/After Image</span>
+              </div>
+              <p class="qz-carousel-text">Better dates. Better meetings. Better days. When you look good consistently, everything else gets easier.</p>
+            </div>
+
+            <!-- Slide 6: StyleDNA -->
+            <div class="swiper-slide">
+              <h1 class="qz-headline">Ready to Unlock Your StyleDNA?</h1>
+              <p class="qz-subtext" style="margin-bottom:12px;">We've shown you how we help guys look better. Now let's talk about YOU.</p>
+              <div class="qz-img-placeholder" id="qz-slide-img-6">
+                <span>StyleDNA Image</span>
+              </div>
+              <p class="qz-carousel-text">These questions help us know what looks good on you - your build, what you like, how you live.</p>
+            </div>
+
+          </div>
+          <div class="swiper-pagination" id="qz-carousel-dots"></div>
+        </div>
+      </div>
+      <button id="qz-carousel-btn" class="qz-btn-primary">Finally <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 1: Q1 - What matters most?
+         ============================================ -->
+    <section id="qz-q1" class="qz-step" data-step="1">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">You're here for a reason &mdash; better style, better fit, or better value.</h1>
+        <h2 class="qz-question-label">What matters most to you?</h2>
+        <div class="qz-options-grid qz-grid-2x2">
+          <button class="qz-option-card" data-value="saving-time" id="qz-q1-opt1">Saving time</button>
+          <button class="qz-option-card" data-value="dressing-better" id="qz-q1-opt2">Dressing better for less</button>
+          <button class="qz-option-card" data-value="finding-brands" id="qz-q1-opt3">Finding better brands &amp; fits</button>
+          <button class="qz-option-card" data-value="confidence" id="qz-q1-opt4">Building confidence</button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 2: Q2 - Primary style
+         ============================================ -->
+    <section id="qz-q2" class="qz-step" data-step="2">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Your style is a signal.</h1>
+        <p class="qz-subtext">It doesn't just reflect who you are &mdash; it trains people how to treat you. We help you send the right signal, without the stress of figuring it out alone.</p>
+        <h2 class="qz-question-label">What's your primary style?</h2>
+        <div class="qz-options-grid qz-grid-1col">
+          <button class="qz-option-card" data-value="contemporary" id="qz-q2-opt1">
+            <span class="qz-option-title">Contemporary</span>
+            <span class="qz-option-desc">Minimalist, timeless pieces</span>
+          </button>
+          <button class="qz-option-card" data-value="streetwear" id="qz-q2-opt2">
+            <span class="qz-option-title">Streetwear</span>
+            <span class="qz-option-desc">Urban, hip hop-inspired fit</span>
+          </button>
+          <button class="qz-option-card" data-value="heritage" id="qz-q2-opt3">
+            <span class="qz-option-title">Heritage</span>
+            <span class="qz-option-desc">Retro, creative, standout pieces</span>
+          </button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 3: COMPLIMENT
+         ============================================ -->
+    <section id="qz-compliment" class="qz-step" data-step="3">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Great choice &mdash; style is personal, but confidence is universal.</h1>
+
+        <!-- Streetwear variant -->
+        <div class="qz-compliment-variant" data-style="streetwear">
+          <div class="qz-img-placeholder" style="aspect-ratio:4/3;">
+            <span>Streetwear Models Image</span>
+          </div>
+          <h2 class="qz-question-label" style="margin-top:16px;">STREETWEAR</h2>
+        </div>
+
+        <!-- Contemporary variant -->
+        <div class="qz-compliment-variant" data-style="contemporary" style="display:none;">
+          <div class="qz-img-placeholder" style="aspect-ratio:4/3;">
+            <span>Contemporary Models Image</span>
+          </div>
+          <h2 class="qz-question-label" style="margin-top:16px;">CONTEMPORARY</h2>
+        </div>
+
+        <!-- Heritage variant -->
+        <div class="qz-compliment-variant" data-style="heritage" style="display:none;">
+          <div class="qz-img-placeholder" style="aspect-ratio:4/3;">
+            <span>Heritage Models Image</span>
+          </div>
+          <h2 class="qz-question-label" style="margin-top:16px;">HERITAGE</h2>
+        </div>
+
+        <p class="qz-subtext">We've styled over 1 million boxes, and here's what we've learned: The #1 reason members stick around? The fit. When it fits right, it feels right. And when you feel right, you show up different.</p>
+      </div>
+      <button class="qz-btn-primary qz-btn-next">Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 4: Q3 - Bottoms fit
+         ============================================ -->
+    <section id="qz-q3" class="qz-step" data-step="4">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Fit is quiet status.</h1>
+        <p class="qz-subtext">Fit isn't just about comfort, it's about how you show up. When it's right, people notice &mdash; even if they don't know why.</p>
+        <h2 class="qz-question-label">How do you like your bottoms to fit?</h2>
+        <div class="qz-options-grid qz-grid-1col">
+          <button class="qz-option-card" data-value="skinny-slim" id="qz-q3-opt1">
+            <span class="qz-option-title">Skinny / Slim</span>
+            <span class="qz-option-desc">Fitted, tapered, sharper silhouette</span>
+          </button>
+          <button class="qz-option-card" data-value="straight" id="qz-q3-opt2">
+            <span class="qz-option-title">Straight</span>
+            <span class="qz-option-desc">Balanced, classic, clean line</span>
+          </button>
+          <button class="qz-option-card" data-value="relaxed" id="qz-q3-opt3">
+            <span class="qz-option-title">Relaxed</span>
+            <span class="qz-option-desc">Looser fit, laid-back energy</span>
+          </button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 5: Q4 - Colors
+         ============================================ -->
+    <section id="qz-q4" class="qz-step" data-step="5">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Colors carry energy.</h1>
+        <p class="qz-subtext">Every color carries a vibe. Neutrals blend in. Bolds stand out. The right mix? That's how people remember you.</p>
+        <h2 class="qz-question-label">What colors do you like?</h2>
+        <div class="qz-options-grid qz-grid-1col">
+          <button class="qz-option-card" data-value="neutral" id="qz-q4-opt1">
+            <span class="qz-option-title">Neutral</span>
+            <span class="qz-option-desc">Clean, understated, low-key</span>
+          </button>
+          <button class="qz-option-card" data-value="bold" id="qz-q4-opt2">
+            <span class="qz-option-title">Bold</span>
+            <span class="qz-option-desc">Bright, vivid, attention-grabbing</span>
+          </button>
+          <button class="qz-option-card" data-value="both" id="qz-q4-opt3">
+            <span class="qz-option-title">Both</span>
+            <span class="qz-option-desc">Mix of chill and standout pieces</span>
+          </button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 6: Q5 - Designs
+         ============================================ -->
+    <section id="qz-q5" class="qz-step" data-step="6">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Designs say what you're about &mdash; without saying a word.</h1>
+        <h2 class="qz-question-label">What kind of designs feel most like you?</h2>
+        <div class="qz-options-grid qz-grid-1col">
+          <button class="qz-option-card" data-value="clean" id="qz-q5-opt1">
+            <span class="qz-option-title">Clean</span>
+            <span class="qz-option-desc">Clean, simple, low-key logos &amp; prints</span>
+          </button>
+          <button class="qz-option-card" data-value="graphic" id="qz-q5-opt2">
+            <span class="qz-option-title">Graphic</span>
+            <span class="qz-option-desc">Bold designs, standout energy</span>
+          </button>
+          <button class="qz-option-card" data-value="both" id="qz-q5-opt3">
+            <span class="qz-option-title">Both</span>
+            <span class="qz-option-desc">Open to all styles, all moods</span>
+          </button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 7: TIP 1
+         ============================================ -->
+    <section id="qz-tip1" class="qz-step" data-step="7">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Color. Design. Fit. Check.</h1>
+        <p class="qz-subtext">93% of members say the main reason they stay is because we nail the fit. A perfect fit = confidence, energy, vibes.</p>
+        <div class="qz-img-placeholder" style="max-width:300px; aspect-ratio:3/4;">
+          <span>Tip Photo 1</span>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next">Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 8: Q6 - Top size
+         ============================================ -->
+    <section id="qz-q6" class="qz-step" data-step="8">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Fit isn't just comfort &mdash; it's competence.</h1>
+        <p class="qz-subtext">We fine-tune each piece to help you feel sharper, stronger, and ready to move. Literally.</p>
+        <h2 class="qz-question-label">What's your preferred top size?</h2>
+        <div class="qz-options-grid qz-grid-2col">
+          <button class="qz-option-pill" data-value="xs" id="qz-q6-xs">X-Small</button>
+          <button class="qz-option-pill" data-value="s" id="qz-q6-s">Small</button>
+          <button class="qz-option-pill" data-value="m" id="qz-q6-m">Medium</button>
+          <button class="qz-option-pill" data-value="l" id="qz-q6-l">Large</button>
+          <button class="qz-option-pill" data-value="xl" id="qz-q6-xl">X-Large</button>
+          <button class="qz-option-pill" data-value="2xl" id="qz-q6-2xl">2X-Large</button>
+          <button class="qz-option-pill" data-value="3xl" id="qz-q6-3xl" style="grid-column: span 2;">3X-Large</button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 9: Q7 - Waist + Pant length
+         ============================================ -->
+    <section id="qz-q7" class="qz-step" data-step="9">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">People feel when your fit is off.</h1>
+        <p class="qz-subtext">We fix that. Because quiet confidence starts with pants that actually fit.</p>
+
+        <h2 class="qz-question-label">What's your waist size?</h2>
+        <div class="qz-options-grid qz-grid-3col" data-group="waistSize">
+          <button class="qz-option-pill" data-value="28">28</button>
+          <button class="qz-option-pill" data-value="29">29</button>
+          <button class="qz-option-pill" data-value="30">30</button>
+          <button class="qz-option-pill" data-value="31">31</button>
+          <button class="qz-option-pill" data-value="32">32</button>
+          <button class="qz-option-pill" data-value="33">33</button>
+          <button class="qz-option-pill" data-value="34">34</button>
+          <button class="qz-option-pill" data-value="36">36</button>
+          <button class="qz-option-pill" data-value="38">38</button>
+          <button class="qz-option-pill" data-value="40">40</button>
+          <button class="qz-option-pill" data-value="42">42</button>
+          <button class="qz-option-pill" data-value="44">44</button>
+        </div>
+
+        <h2 class="qz-question-label" style="margin-top:24px;">What's your desired pant length?</h2>
+        <div class="qz-options-grid qz-grid-3col" data-group="pantLength">
+          <button class="qz-option-pill" data-value="30">30</button>
+          <button class="qz-option-pill" data-value="32">32</button>
+          <button class="qz-option-pill" data-value="34">34</button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 10: Q8 - Shoe size
+         ============================================ -->
+    <section id="qz-q8" class="qz-step" data-step="10">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Your shoes finish the story.</h1>
+        <p class="qz-subtext">We help you build full fits &mdash; not half-baked looks.</p>
+        <h2 class="qz-question-label">What's your shoe size?</h2>
+        <div class="qz-options-grid qz-grid-3col">
+          <button class="qz-option-pill" data-value="7">7</button>
+          <button class="qz-option-pill" data-value="7.5">7.5</button>
+          <button class="qz-option-pill" data-value="8">8</button>
+          <button class="qz-option-pill" data-value="8.5">8.5</button>
+          <button class="qz-option-pill" data-value="9">9</button>
+          <button class="qz-option-pill" data-value="9.5">9.5</button>
+          <button class="qz-option-pill" data-value="10">10</button>
+          <button class="qz-option-pill" data-value="10.5">10.5</button>
+          <button class="qz-option-pill" data-value="11">11</button>
+          <button class="qz-option-pill" data-value="11.5">11.5</button>
+          <button class="qz-option-pill" data-value="12">12</button>
+          <button class="qz-option-pill" data-value="13">13</button>
+          <button class="qz-option-pill" data-value="14">14</button>
+          <button class="qz-option-pill" data-value="other">Other</button>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 11: Q9 - Height + Weight sliders
+         ============================================ -->
+    <section id="qz-q9" class="qz-step" data-step="11">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Brands use size charts &mdash; we use your measurements.</h1>
+        <p class="qz-subtext">So you get what actually fits.</p>
+
+        <div class="qz-slider-group">
+          <h2 class="qz-question-label" style="text-align:left;">What's your height?</h2>
+          <div class="qz-slider-header">
+            <span class="qz-slider-label">Height</span>
+            <span class="qz-slider-value" id="qz-height-value">5'8"</span>
+          </div>
+          <input type="range" class="qz-range" id="qz-height-slider" min="58" max="80" value="68" step="1" />
+          <div class="qz-slider-hint" id="qz-height-hint">5'8"</div>
+        </div>
+
+        <div class="qz-slider-group">
+          <h2 class="qz-question-label" style="text-align:left;">What's your weight?</h2>
+          <div class="qz-slider-header">
+            <span class="qz-slider-label">Weight</span>
+            <span class="qz-slider-value" id="qz-weight-value">170 lbs</span>
+          </div>
+          <input type="range" class="qz-range" id="qz-weight-slider" min="100" max="350" value="170" step="5" />
+          <div class="qz-slider-hint" id="qz-weight-hint">170 lbs</div>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next">Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 12: TIP 2
+         ============================================ -->
+    <section id="qz-tip2" class="qz-step" data-step="12">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">One size doesn't fit all.</h1>
+        <p class="qz-subtext">Forget the guesswork. We build boxes to fit you &mdash; not a generic chart. The result? More wears, fewer regrets.</p>
+        <div class="qz-img-placeholder" style="max-width:300px; aspect-ratio:3/4;">
+          <span>Tip Photo 2</span>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next">Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 13: Q10 - Brand selection
+         ============================================ -->
+    <section id="qz-q10" class="qz-step" data-step="13">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Get premium brands &mdash; for half the price.</h1>
+        <p class="qz-subtext">Because flexing smart is better than flexing loud.</p>
+        <h2 class="qz-question-label">What brands and shops feel most like you?</h2>
+        <p class="qz-brands-counter">Select up to 6</p>
+        <div class="qz-brands-wrap">
+          <button class="qz-brand-pill" data-value="adidas">adidas</button>
+          <button class="qz-brand-pill" data-value="american-eagle">American Eagle</button>
+          <button class="qz-brand-pill" data-value="banks-journal">Banks Journal</button>
+          <button class="qz-brand-pill" data-value="ben-sherman">Ben Sherman</button>
+          <button class="qz-brand-pill" data-value="brixton">Brixton</button>
+          <button class="qz-brand-pill" data-value="calvin-klein">Calvin Klein</button>
+          <button class="qz-brand-pill" data-value="champion">Champion</button>
+          <button class="qz-brand-pill" data-value="citi-trends">Citi Trends</button>
+          <button class="qz-brand-pill" data-value="cookies">Cookies</button>
+          <button class="qz-brand-pill" data-value="crooks-castles">Crooks &amp; Castles</button>
+          <button class="qz-brand-pill" data-value="dl1961">DL1961</button>
+          <button class="qz-brand-pill" data-value="diamond">Diamond</button>
+          <button class="qz-brand-pill" data-value="elwood">Elwood</button>
+          <button class="qz-brand-pill" data-value="foot-locker">Foot Locker</button>
+          <button class="qz-brand-pill" data-value="hm">H&amp;M</button>
+          <button class="qz-brand-pill" data-value="herschel">Herschel</button>
+          <button class="qz-brand-pill" data-value="huf">HUF</button>
+          <button class="qz-brand-pill" data-value="hurley">Hurley</button>
+          <button class="qz-brand-pill" data-value="jack-jones">Jack &amp; Jones</button>
+          <button class="qz-brand-pill" data-value="joes">Joe's</button>
+          <button class="qz-brand-pill" data-value="katin">Katin</button>
+          <button class="qz-brand-pill" data-value="levis">Levi's</button>
+          <button class="qz-brand-pill" data-value="macys">Macy's</button>
+          <button class="qz-brand-pill" data-value="market">MARKET</button>
+          <button class="qz-brand-pill" data-value="new-balance">New Balance</button>
+          <button class="qz-brand-pill" data-value="nike">Nike</button>
+          <button class="qz-brand-pill" data-value="nixon">Nixon</button>
+          <button class="qz-brand-pill" data-value="nordstrom">Nordstrom</button>
+          <button class="qz-brand-pill" data-value="pacsun">Pacsun</button>
+          <button class="qz-brand-pill" data-value="playboy">Playboy</button>
+          <button class="qz-brand-pill" data-value="primitive">Primitive</button>
+          <button class="qz-brand-pill" data-value="puma">Puma</button>
+          <button class="qz-brand-pill" data-value="ralph-lauren">Ralph Lauren</button>
+          <button class="qz-brand-pill" data-value="staple">Staple</button>
+          <button class="qz-brand-pill" data-value="stussy">Stussy</button>
+          <button class="qz-brand-pill" data-value="the-hundreds">The Hundreds</button>
+          <button class="qz-brand-pill" data-value="tillys">Tillys</button>
+          <button class="qz-brand-pill" data-value="tommy-hilfiger">Tommy Hilfiger</button>
+          <button class="qz-brand-pill" data-value="undefeated">Undefeated</button>
+          <button class="qz-brand-pill" data-value="urban-outfitters">Urban Outfitters</button>
+          <button class="qz-brand-pill" data-value="vans">Vans</button>
+          <button class="qz-brand-pill" data-value="zara">Zara</button>
+          <button class="qz-brand-pill" data-value="zumiez">Zumiez</button>
+        </div>
+        <p class="qz-subtext" style="margin-top:16px;">We place large orders with brands to create serious savings for our Members &mdash; and to introduce them to their new favorite brands.</p>
+      </div>
+      <button class="qz-btn-primary qz-btn-next">Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 14: Q11 - Email
+         ============================================ -->
+    <section id="qz-q11" class="qz-step" data-step="14">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Let's lock in your style journey.</h1>
+        <p class="qz-subtext">We send secret drops, early access, and box upgrades. If you're serious about leveling-up, this is how you stay one step ahead.</p>
+        <h2 class="qz-question-label">What's your email?</h2>
+        <div class="qz-input-group">
+          <input type="email" class="qz-input" id="qz-email-input" placeholder="Your email" autocomplete="email" />
+          <p class="qz-input-error-msg" id="qz-email-error">Please enter a valid email address.</p>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next qz-btn-disabled" disabled>Next <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 15: Q12 - Phone (optional)
+         ============================================ -->
+    <section id="qz-q12" class="qz-step" data-step="15">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Unlock VIP Mode</h1>
+        <p class="qz-subtext">Get text notifications about new brands, exclusives, member perks, promotions and more.</p>
+        <h2 class="qz-question-label">What's your number?</h2>
+        <div class="qz-input-group">
+          <input type="tel" class="qz-input" id="qz-phone-input" placeholder="Cell Number" autocomplete="tel" />
+        </div>
+        <div class="qz-checkbox-wrap">
+          <input type="checkbox" id="qz-vip-checkbox" />
+          <label class="qz-checkbox-label" for="qz-vip-checkbox">Check this box for exclusive VIP offers! By clicking this checkbox, you agree to receive recurring automated promotional and personalized marketing text messages from Haul of Fame at this cell number. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel.</label>
+        </div>
+      </div>
+      <div class="qz-btn-wrap">
+        <button class="qz-btn-primary qz-btn-next">Next <span class="qz-arrow">&rarr;</span></button>
+        <button class="qz-btn-secondary qz-btn-skip">Skip And Miss Out On VIP Mode</button>
+      </div>
+    </section>
+
+    <!-- ============================================
+         STEP 16: Q13 - Birthday (optional)
+         ============================================ -->
+    <section id="qz-q13" class="qz-step" data-step="16">
+      <div class="qz-step-content">
+        <h1 class="qz-headline">Your Fit Day, Upgraded</h1>
+        <p class="qz-subtext">Stylists remember birthdays. Give us a reason to surprise you. Being well-dressed should come with perks.</p>
+        <h2 class="qz-question-label">When's your birthday?</h2>
+        <div class="qz-input-group">
+          <input type="text" class="qz-input" id="qz-birthday-input" placeholder="MM/DD/YYYY" maxlength="10" />
+          <p class="qz-input-hint">MM/DD/YYYY</p>
+        </div>
+      </div>
+      <div class="qz-btn-wrap">
+        <button class="qz-btn-primary qz-btn-next">Reveal My StyleDNA <span class="qz-arrow">&rarr;</span></button>
+        <button class="qz-btn-secondary qz-btn-skip">Skip And Reveal My StyleDNA</button>
+      </div>
+    </section>
+
+    <!-- ============================================
+         STEP 17: SUMMARY - StyleDNA
+         ============================================ -->
+    <section id="qz-summary" class="qz-step" data-step="17">
+      <div class="qz-step-content">
+        <div class="qz-summary-card">
+          <!-- Hero -->
+          <div class="qz-summary-hero">
+            <div>
+              <p class="qz-summary-hero-label">YOU ARE</p>
+              <h1 class="qz-summary-archetype" id="qz-summary-archetype-name">The Architect</h1>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="qz-summary-body">
+            <div class="qz-tags-row" id="qz-summary-tags"></div>
+
+            <!-- Description -->
+            <div class="qz-summary-section">
+              <p id="qz-summary-archetype-desc" style="font-size:15px; color:var(--qz-text); font-weight:600; margin-bottom:12px;">Clean fits. Simple choices. Always looks good.</p>
+            </div>
+
+            <!-- Your Style Mission -->
+            <div class="qz-summary-section">
+              <h3 class="qz-summary-section-title">Your Style Mission</h3>
+              <p style="font-size:14px; color:var(--qz-text-light); line-height:1.6;">Your style journey is about adding layers to what you've already built. You've got the foundation covered &mdash; now it's time to experiment with your comfort zone. We'll introduce pieces that elevate who you are.</p>
+            </div>
+
+            <!-- Traits -->
+            <div class="qz-summary-section">
+              <h3 class="qz-summary-section-title">Your Traits</h3>
+              <div class="qz-traits-wrap" id="qz-summary-traits"></div>
+            </div>
+
+            <!-- StyleDNA Stats -->
+            <div class="qz-summary-section">
+              <h3 class="qz-summary-section-title">Your StyleDNA</h3>
+
+              <div class="qz-stat-bar-group">
+                <div class="qz-stat-bar-label">Creative Expression</div>
+                <div class="qz-stat-bar-sublabels"><span>Understated</span><span>Expressive</span></div>
+                <div class="qz-stat-bar-track"><div class="qz-stat-bar-fill" id="qz-stat-creative-fill" style="width:0%"></div></div>
+                <div class="qz-stat-bar-value" id="qz-stat-creative-value">0%</div>
+              </div>
+
+              <div class="qz-stat-bar-group">
+                <div class="qz-stat-bar-label">Trend Awareness</div>
+                <div class="qz-stat-bar-sublabels"><span>Timeless</span><span>Trendsetter</span></div>
+                <div class="qz-stat-bar-track"><div class="qz-stat-bar-fill" id="qz-stat-trend-fill" style="width:0%"></div></div>
+                <div class="qz-stat-bar-value" id="qz-stat-trend-value">0%</div>
+              </div>
+
+              <div class="qz-stat-bar-group">
+                <div class="qz-stat-bar-label">Wardrobe Flexibility</div>
+                <div class="qz-stat-bar-sublabels"><span>Focused</span><span>Versatile</span></div>
+                <div class="qz-stat-bar-track"><div class="qz-stat-bar-fill" id="qz-stat-wardrobe-fill" style="width:0%"></div></div>
+                <div class="qz-stat-bar-value" id="qz-stat-wardrobe-value">0%</div>
+              </div>
+            </div>
+
+            <!-- We've Got You Covered -->
+            <div class="qz-summary-section">
+              <h3 class="qz-summary-section-title">We've Got You Covered</h3>
+              <ul class="qz-checklist">
+                <li>$60-$305/month, all pricing upfront</li>
+                <li>All sizes XS-3XL available</li>
+                <li>Cancel anytime, no commitment</li>
+                <li>Swap months whenever you want</li>
+                <li>You choose everything that ships</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="qz-btn-primary qz-btn-next" style="position:relative; bottom:auto; left:auto; transform:none; margin:24px auto;">See My Plan Options <span class="qz-arrow">&rarr;</span></button>
+    </section>
+
+    <!-- ============================================
+         STEP 18: PLAN SELECTION
+         ============================================ -->
+    <section id="qz-plans" class="qz-step" data-step="18">
+      <div class="qz-step-content">
+        <div class="qz-logo" style="margin-bottom:8px;"><img src="imgs/Logo_PNG_Colored_HOF.png" alt="Haul of Fame" /></div>
+        <h1 class="qz-plans-header">A Plan For Every Budget</h1>
+        <p class="qz-plans-sub">Get your first package within 2 weeks! Includes some of the Estimated U.S. Shipping for members.</p>
+
+        <!-- Plan: Haul of Famer (Featured) -->
+        <div class="qz-plan-card qz-plan-featured" id="qz-plan-hof">
+          <h2 class="qz-plan-name">Haul of Famer</h2>
+          <p class="qz-plan-items">6-8 items per box</p>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Your Price</span>
+            <span class="qz-plan-price-value">$305</span>
+          </div>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Retail Value</span>
+            <span class="qz-plan-msrp">$575+</span>
+          </div>
+          <button class="qz-plan-btn">Start Styling</button>
+        </div>
+
+        <!-- Plan: All Star -->
+        <div class="qz-plan-card" id="qz-plan-allstar">
+          <h2 class="qz-plan-name">The All Star</h2>
+          <p class="qz-plan-items">4-5 items per box</p>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Your Price</span>
+            <span class="qz-plan-price-value">$225</span>
+          </div>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Retail Value</span>
+            <span class="qz-plan-msrp">$400+</span>
+          </div>
+          <button class="qz-plan-btn">Start Styling</button>
+        </div>
+
+        <!-- Plan: Starter -->
+        <div class="qz-plan-card" id="qz-plan-starter">
+          <h2 class="qz-plan-name">The Starter</h2>
+          <p class="qz-plan-items">3-4 items per box</p>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Your Price</span>
+            <span class="qz-plan-price-value">$165</span>
+          </div>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Retail Value</span>
+            <span class="qz-plan-msrp">$300+</span>
+          </div>
+          <button class="qz-plan-btn">Start Styling</button>
+        </div>
+
+        <!-- Plan: Rookie -->
+        <div class="qz-plan-card" id="qz-plan-rookie">
+          <h2 class="qz-plan-name">The Rookie</h2>
+          <p class="qz-plan-items">2-3 items per box</p>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Your Price</span>
+            <span class="qz-plan-price-value">$105</span>
+          </div>
+          <div class="qz-plan-pricing">
+            <span class="qz-plan-price-label">Retail Value</span>
+            <span class="qz-plan-msrp">$200+</span>
+          </div>
+          <button class="qz-plan-btn">Start Styling</button>
+        </div>
+
+        <!-- Info Section -->
+        <div class="qz-divider"></div>
+        <div style="text-align:center; margin-bottom:32px;">
+          <h2 class="qz-headline" style="font-size:22px;">Don't worry, you can upgrade or downgrade your plan at any time.</h2>
+          <p class="qz-subtext">Haul of Fame sends you a monthly package based on the style profile and preferences you create.</p>
+        </div>
+
+        <div style="display:grid; gap:12px; margin-bottom:32px;">
+          <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--qz-text);">
+            <span style="font-size:18px; color:var(--qz-accent);">&#10003;</span> Top streetwear brands
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--qz-text);">
+            <span style="font-size:18px; color:var(--qz-accent);">&#10003;</span> No long-term commitments
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--qz-text);">
+            <span style="font-size:18px; color:var(--qz-accent);">&#10003;</span> Keep it all without paying extra
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--qz-text);">
+            <span style="font-size:18px; color:var(--qz-accent);">&#10003;</span> Free shipping to continental U.S.
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--qz-text);">
+            <span style="font-size:18px; color:var(--qz-accent);">&#10003;</span> Stylists available around the clock
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="qz-faq-section">
+          <h2 class="qz-faq-title">Got A Question?</h2>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Have a specific need?</button>
+            <div class="qz-faq-answer"><p>Reach out to our styling team and we'll work with you to find the perfect fit for your needs and preferences.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">What's in my first package?</button>
+            <div class="qz-faq-answer"><p>Your first package includes a curated selection of streetwear pieces based on your StyleDNA quiz results. The number of items depends on your chosen plan.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Can I change my Style Type?</button>
+            <div class="qz-faq-answer"><p>Yes! You can update your style preferences at any time through your member portal. Your stylist will adjust future boxes accordingly.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">How do I choose my Bonus?</button>
+            <div class="qz-faq-answer"><p>After your first box, you'll get access to bonus item selections each month. Preview and pick your favorites before they ship.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Can I upgrade my subscription?</button>
+            <div class="qz-faq-answer"><p>Absolutely. You can upgrade or downgrade your plan at any time. Changes take effect on your next billing cycle.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Do you make deliveries?</button>
+            <div class="qz-faq-answer"><p>Yes, we ship to all 50 U.S. states. Continental U.S. shipping is free. Alaska and Hawaii may have additional shipping charges.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Can I exchange an item?</button>
+            <div class="qz-faq-answer"><p>We offer easy exchanges within 7 days of delivery. Simply contact our support team and we'll get you the right size or style.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Can I cancel my subscription?</button>
+            <div class="qz-faq-answer"><p>Yes, you can cancel anytime with no penalties. Just head to your account settings or contact our support team.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">Do you make international deliveries?</button>
+            <div class="qz-faq-answer"><p>Currently, we only ship within the United States. We're working on expanding internationally in the near future.</p></div>
+          </div>
+
+          <div class="qz-faq-item">
+            <button class="qz-faq-question">How does the pricing system work?</button>
+            <div class="qz-faq-answer"><p>Each plan has a fixed monthly price. You get items worth significantly more than your subscription cost. No hidden fees, no surprises.</p></div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align:center; padding:40px 0 20px; font-size:12px; color:var(--qz-text-light);">
+          HAUL OF FAME
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /qz-container -->
+
+  <!-- Scripts -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/quiz.js"></script>
+
+</body>
+</html>

@@ -1451,5 +1451,200 @@
     "screenshotPath": "./screenshots/moat-1772219110505-qki4risqt.png",
     "status": "done",
     "timestamp": 1772219110582
+  },
+  {
+    "id": "226cc2dd-6a04-4b6b-a593-c3cadf68cebe",
+    "title": "Container #w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26",
+    "comment": "Replace image with world_section_2 from img folder",
+    "selector": "#w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26",
+    "boundingRect": {
+      "x": 1433,
+      "y": 206,
+      "w": 729,
+      "h": 592
+    },
+    "screenshotPath": "./screenshots/moat-1772220407278-r9bx1fs9a.png",
+    "status": "done",
+    "timestamp": 1772220407357
+  },
+  {
+    "id": "e9767737-88e2-416a-be3f-71814b8de5a0",
+    "title": "Container #div-8859346f",
+    "comment": "Replace image with WEB_Banner_cta.jpg from img folder",
+    "selector": "#div-8859346f",
+    "boundingRect": {
+      "x": 384,
+      "y": 259,
+      "w": 1777,
+      "h": 701
+    },
+    "screenshotPath": "./screenshots/moat-1772220462959-p4b0jirez.png",
+    "status": "done",
+    "timestamp": 1772220463046
+  },
+  {
+    "id": "b0529f4b-a040-4b25-ac99-5d9547599be1",
+    "title": "Image: Haul of Famer",
+    "comment": "These needs to be background less and 50% bigger",
+    "selector": "#img-be73332b",
+    "boundingRect": {
+      "x": 1628,
+      "y": 228,
+      "w": 28,
+      "h": 36
+    },
+    "screenshotPath": "./screenshots/moat-1772220806802-0wpx2kwmh.png",
+    "status": "done",
+    "timestamp": 1772220806882
+  },
+  {
+    "id": "2e53cc41-8cb5-4df2-be9b-24d48bfc3274",
+    "title": "Container #div-bb05aa58",
+    "comment": "Add image of the botton of this holo_HOF.png, 350 px width and fixed propotion",
+    "selector": "#div-bb05aa58",
+    "boundingRect": {
+      "x": 384,
+      "y": 470,
+      "w": 84,
+      "h": 18
+    },
+    "screenshotPath": "./screenshots/moat-1772220919563-cn1xwci7u.png",
+    "status": "done",
+    "timestamp": 1772220919639
+  },
+  {
+    "id": "486b2437-77f1-41ea-a280-077772cb7928",
+    "title": "Image: The Starter",
+    "comment": "Remove the circle in the icon and dont frame it. Use the png without any container",
+    "selector": "#img-5bb4a19c",
+    "boundingRect": {
+      "x": 1192,
+      "y": 874,
+      "w": 28,
+      "h": 54
+    },
+    "screenshotPath": "./screenshots/moat-1772221267980-tgj3qa1xf.png",
+    "status": "done",
+    "timestamp": 1772221268056
+  },
+  {
+    "id": "05105b7e-b532-476b-9b86-dea14ad65961",
+    "title": "Container #w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26",
+    "comment": "Add image here of world_section_2 .jpgfrom img folder",
+    "selector": "#w-node-_1dc3f444-288a-0abe-b549-569aac6b6de7-e5bcab26",
+    "boundingRect": {
+      "x": 1433,
+      "y": 187,
+      "w": 729,
+      "h": 592
+    },
+    "screenshotPath": "./screenshots/moat-1772221325025-w56o7fnux.png",
+    "status": "done",
+    "timestamp": 1772221325108
+  },
+  {
+    "id": "e1a1ed1a-b24f-47e7-8990-7f8044120026",
+    "title": "Image: Haul of Fame Holographic Logo",
+    "comment": "slant it around 20 deg and increase size by 20%",
+    "selector": "#img-holo-hof",
+    "boundingRect": {
+      "x": 536,
+      "y": 550,
+      "w": 350,
+      "h": 276
+    },
+    "screenshotPath": "./screenshots/moat-1772221355032-ydjfa3iy8.png",
+    "status": "done",
+    "timestamp": 1772221355117
+  },
+  {
+    "id": "80b21b7d-3340-429c-9b94-7bcbcbf0238e",
+    "title": "Container #w-node-_7fa422e5-b3ef-6e8e-573c-872c6b5a18d2-e5bcab26",
+    "comment": "All text should be in white including the slash",
+    "selector": "#w-node-_7fa422e5-b3ef-6e8e-573c-872c6b5a18d2-e5bcab26",
+    "boundingRect": {
+      "x": 1195,
+      "y": 365,
+      "w": 155,
+      "h": 18
+    },
+    "screenshotPath": "./screenshots/moat-1772221383752-txwi8uwat.png",
+    "status": "done",
+    "timestamp": 1772221383830
+  },
+  {
+    "id": "914ee905-d423-49c3-a161-2c3546080ef3",
+    "title": "Image: Haul of Fame Holographic Logo",
+    "comment": "Tilt back around 10 deg clockwise",
+    "selector": "#img-holo-hof",
+    "boundingRect": {
+      "x": 236,
+      "y": 239,
+      "w": 508,
+      "h": 455
+    },
+    "screenshotPath": "./screenshots/moat-1772222044657-ozvfqyagw.png",
+    "status": "done",
+    "timestamp": 1772222044761
+  },
+  {
+    "id": "bfccc343-8662-4bb9-bfad-43b8885c6959",
+    "title": "Image: Haul of Famer",
+    "comment": "make icon larger by 200% all icons from the pricing button>get started",
+    "selector": "#img-be73332b",
+    "boundingRect": {
+      "x": 1245,
+      "y": 293,
+      "w": 23,
+      "h": 54
+    },
+    "screenshotPath": "",
+    "status": "done",
+    "timestamp": 1772222113057
+  },
+  {
+    "id": "d92efa62-db39-44d3-a238-94c091e2ce51",
+    "title": "Container #div-28d87f82",
+    "comment": "reduce the size of button height. And reduce the size of the icon by 100%",
+    "selector": "#div-28d87f82",
+    "boundingRect": {
+      "x": 415,
+      "y": 517,
+      "w": 520,
+      "h": 203
+    },
+    "screenshotPath": "./screenshots/moat-1772234283206-pv3zvql5c.png",
+    "status": "done",
+    "timestamp": 1772234283290
+  },
+  {
+    "id": "45562ae6-cca7-427a-b2ff-805ef09c6d54",
+    "title": "Container #qz-carousel-dots",
+    "comment": "The dots are overlapping on the text. Lower this from the bottom of the whole container of paragraph and keeep the position consistent",
+    "selector": "#qz-carousel-dots",
+    "boundingRect": {
+      "x": 1030,
+      "y": 741,
+      "w": 500,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772476022585-nmhqtlopg.png",
+    "status": "done",
+    "timestamp": 1772476022653
+  },
+  {
+    "id": "10d7bf96-f300-4ba9-9a2f-9912904875eb",
+    "title": "Image: Haul of Fame",
+    "comment": "Increase the site by 250px width with fix ration",
+    "selector": "div.qz-step-content > div.qz-logo:nth-child(1) > img",
+    "boundingRect": {
+      "x": 1255,
+      "y": 80,
+      "w": 50,
+      "h": 50
+    },
+    "screenshotPath": "./screenshots/moat-1772476052062-2t7y35vr5.png",
+    "status": "done",
+    "timestamp": 1772476052128
   }
 ]
