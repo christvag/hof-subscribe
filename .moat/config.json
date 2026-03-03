@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "projectName": "hof_subscribe",
-  "createdAt": "2026-03-02T15:54:20.322Z",
+  "createdAt": "2026-03-03T16:29:53.528Z",
   "streaming": {
     "enabled": true,
     "format": "jsonl",

@@ -1,6 +1,6 @@
 # Moat Tasks
 
-**Total**: 100 | **To Do**: 0 | **Doing**: 0 | **Done**: 100
+**Total**: 103 | **To Do**: 0 | **Doing**: 1 | **Done**: 102
 
 ## Tasks
 
@@ -104,8 +104,11 @@
 98. [x] Container #div-28d87f82 – "reduce the size of button height. And reduce the size of ..." `#div-28d87f82`
 99. [x] Container #qz-carousel-dots – "The dots are overlapping on the text. Lower this from the..." `#qz-carousel-dots`
 100. [x] Image: Haul of Fame – "Increase the site by 250px width with fix ration" `div.qz-step-content > div.qz-logo:nth-child(1) > img`
+101. [x] Link: CLAIM DEAL + STArT QUIZ – "Lets link here the quiz" `#w-node-_248186b7-224a-4be8-d5c9-368d009288ff-e5bcab26`
+102. [x] Container #div-a2e4cd4a – "Remove the profile icons and link the quiz here" `#div-a2e4cd4a`
+103. [~] Container #w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869 – "using gemini-image-gen, generate 3 images replacing the 3..." `#w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869`
 
 ---
 
-_Generated: 3/3/2026, 3:23:13 AM_
+_Generated: 3/4/2026, 1:19:41 AM_
 _Source: moat-tasks-detail.json_

@@ -1646,5 +1646,50 @@
     "screenshotPath": "./screenshots/moat-1772476052062-2t7y35vr5.png",
     "status": "done",
     "timestamp": 1772476052128
+  },
+  {
+    "id": "095e1b8b-b22c-447e-a8f8-37419159dc67",
+    "title": "Link: CLAIM DEAL + STArT QUIZ",
+    "comment": "Lets link here the quiz",
+    "selector": "#w-node-_248186b7-224a-4be8-d5c9-368d009288ff-e5bcab26",
+    "boundingRect": {
+      "x": 1089,
+      "y": 863,
+      "w": 367,
+      "h": 61
+    },
+    "screenshotPath": "./screenshots/moat-1772555416243-4pjs5m4v4.png",
+    "status": "done",
+    "timestamp": 1772555416327
+  },
+  {
+    "id": "2c45efc2-aa46-4010-aa3c-c90687fece6b",
+    "title": "Container #div-a2e4cd4a",
+    "comment": "Remove the profile icons and link the quiz here",
+    "selector": "#div-a2e4cd4a",
+    "boundingRect": {
+      "x": 1160,
+      "y": 505,
+      "w": 226,
+      "h": 70
+    },
+    "screenshotPath": "./screenshots/moat-1772555456795-ehyggh5op.png",
+    "status": "done",
+    "timestamp": 1772555456876
+  },
+  {
+    "id": "db76d845-559f-490a-ba9c-6cdc900ff70a",
+    "title": "Container #w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869",
+    "comment": "using gemini-image-gen, generate 3 images replacing the 3 images on this container of:\nA nike shoe in a basketball court with a appealing display setup of a ball in a homecourt, a swagger shirt   on a stair rail folded and in a stylish photography position, and a cool hoodie worn by someone who is jogging while listening to music.",
+    "selector": "#w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869",
+    "boundingRect": {
+      "x": 1283,
+      "y": 176,
+      "w": 878,
+      "h": 1006
+    },
+    "screenshotPath": "./screenshots/moat-1772556018625-a9p6ka07a.png",
+    "status": "doing",
+    "timestamp": 1772556018732
   }
 ]
