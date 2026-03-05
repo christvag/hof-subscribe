@@ -682,10 +682,10 @@
 
   // CONFIGURE: Paste your Shopify checkout URLs here (use cart permalink format)
   var SHOPIFY_URLS = {
-    'haul-of-famer': 'https://YOUR-STORE.myshopify.com/cart/VARIANT_ID:1',
-    'all-star':      'https://YOUR-STORE.myshopify.com/cart/VARIANT_ID:1',
-    'starter':       'https://YOUR-STORE.myshopify.com/cart/VARIANT_ID:1',
-    'rookie':        'https://YOUR-STORE.myshopify.com/cart/VARIANT_ID:1'
+    'haul-of-famer': 'https://thehauloffame.com/products/the-haul-of-famer',
+    'all-star':      'https://thehauloffame.com/products/the-all-star',
+    'starter':       'https://thehauloffame.com/products/the-starter',
+    'rookie':        'https://thehauloffame.com/products/the-rookie'
   };
 
   function buildPayload(extraData) {
@@ -760,11 +760,8 @@
 
         // Redirect to Shopify
         var url = SHOPIFY_URLS[planKey];
-        if (url && url.indexOf('YOUR-STORE') === -1) {
+        if (url) {
           window.location.href = url;
-        } else {
-          console.log('[HOF Quiz] Shopify URL not configured for plan:', planKey);
-          alert('Plan selected: ' + planKey + '. Shopify checkout URL not configured yet.');
         }
       });
     });

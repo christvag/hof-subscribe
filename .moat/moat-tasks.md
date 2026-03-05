@@ -1,6 +1,6 @@
 # Moat Tasks
 
-**Total**: 123 | **To Do**: 0 | **Doing**: 0 | **Done**: 123
+**Total**: 139 | **To Do**: 0 | **Doing**: 0 | **Done**: 139
 
 ## Tasks
 
@@ -127,8 +127,24 @@
 121. [x] Container #div-compliment-stack – "This has some empty space at the bottom. Reduce the exces..." `#div-compliment-stack`
 122. [x] Image: Fit Tip – "Make this circle image larger around 700px" `div.qz-step-content > div.qz-img-placeholder > img`
 123. [x] Input (email): Your email – "This email field should be required and wont proceed till..." `#qz-email-input`
+124. [x] Button: Start Styling – "Add to this link: https://thehauloffame.com/products/the-..." `#qz-plan-rookie > button:nth-of-type(1)`
+125. [x] Button: Start Styling – "https://thehauloffame.com/products/the-starter" `#qz-plan-starter > button:nth-of-type(1)`
+126. [x] Button: Start Styling – "https://thehauloffame.com/products/the-all-star" `#qz-plan-allstar > button:nth-of-type(1)`
+127. [x] Button: Start Styling – "https://thehauloffame.com/products/the-haul-of-famer" `#qz-plan-hof > button:nth-of-type(1)`
+128. [x] Image: Haul of Fame – "https://thehauloffame.com" `div.qz-step-content > div.qz-logo:nth-child(1) > img`
+129. [x] Link: DO NOT SELL MY INFO – "Remove this" `#lnk-72d8a9d5`
+130. [x] Link: ACCESSIBILITY – "Remove this" `#lnk-f31d6f82`
+131. [x] Link: youtube – "Reword and change this to "Whatnot"" `#lnk-a598975a`
+132. [x] Container #w-node-a5e4f806-ebe7-5af0-0fab-1fe4fe1a7c0b-654d2164 – "Remove this whole section" `#w-node-a5e4f806-ebe7-5af0-0fab-1fe4fe1a7c0b-654d2164`
+133. [x] Link: community – "Change to Shop" `#lnk-793f7dab`
+134. [x] Link: faq – "Scroll going up on this page to the FAQ section" `#lnk-ff80e4bc`
+135. [x] Link: help – "Remove" `#lnk-25ff6095`
+136. [x] Link: community – "Change to "Whatnot"" `#lnk-e70c985a`
+137. [x] Container #div-a9058dd2 – "Remove this menu item" `#div-a9058dd2`
+138. [x] Link: how it works – "This should bring them on the section of this page for "H..." `#lnk-6561ea62`
+139. [x] Container #div-e52de8c2 – "Link to the quiz" `#div-e52de8c2`
 
 ---
 
-_Generated: 3/6/2026, 2:55:08 AM_
+_Generated: 3/6/2026, 3:25:14 AM_
 _Source: moat-tasks-detail.json_

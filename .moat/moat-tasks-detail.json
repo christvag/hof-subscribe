@@ -2016,5 +2016,245 @@
     "screenshotPath": "./screenshots/moat-1772733784862-s81766gus.png",
     "status": "done",
     "timestamp": 1772733784926
+  },
+  {
+    "id": "a8291495-8a22-43c3-804d-95bd31f1c058",
+    "title": "Button: Start Styling",
+    "comment": "Add to this link:\nhttps://thehauloffame.com/products/the-rookie",
+    "selector": "#qz-plan-rookie > button:nth-of-type(1)",
+    "boundingRect": {
+      "x": 1044,
+      "y": 699,
+      "w": 458,
+      "h": 46
+    },
+    "screenshotPath": "./screenshots/moat-1772737024886-4ek6go1hn.png",
+    "status": "done",
+    "timestamp": 1772737024958
+  },
+  {
+    "id": "d7327c69-d679-432e-8863-344922b479ef",
+    "title": "Button: Start Styling",
+    "comment": "https://thehauloffame.com/products/the-starter",
+    "selector": "#qz-plan-starter > button:nth-of-type(1)",
+    "boundingRect": {
+      "x": 1044,
+      "y": 452,
+      "w": 458,
+      "h": 46
+    },
+    "screenshotPath": "./screenshots/moat-1772737054991-mb002vibh.png",
+    "status": "done",
+    "timestamp": 1772737055062
+  },
+  {
+    "id": "54ccee38-a7a2-40dd-ac91-d242212eed3f",
+    "title": "Button: Start Styling",
+    "comment": "https://thehauloffame.com/products/the-all-star",
+    "selector": "#qz-plan-allstar > button:nth-of-type(1)",
+    "boundingRect": {
+      "x": 1036,
+      "y": 538,
+      "w": 458,
+      "h": 46
+    },
+    "screenshotPath": "./screenshots/moat-1772737064258-6ogtv8y6n.png",
+    "status": "done",
+    "timestamp": 1772737064332
+  },
+  {
+    "id": "cc8abce7-273a-4bcb-b8d1-01f0dd846de1",
+    "title": "Button: Start Styling",
+    "comment": "https://thehauloffame.com/products/the-haul-of-famer",
+    "selector": "#qz-plan-hof > button:nth-of-type(1)",
+    "boundingRect": {
+      "x": 1045,
+      "y": 612,
+      "w": 456,
+      "h": 46
+    },
+    "screenshotPath": "./screenshots/moat-1772737079530-w1cc3zblv.png",
+    "status": "done",
+    "timestamp": 1772737079595
+  },
+  {
+    "id": "ad25509c-f24a-4bc1-a61a-810d1e69d8f8",
+    "title": "Image: Haul of Fame",
+    "comment": "https://thehauloffame.com",
+    "selector": "div.qz-step-content > div.qz-logo:nth-child(1) > img",
+    "boundingRect": {
+      "x": 1148,
+      "y": 80,
+      "w": 250,
+      "h": 250
+    },
+    "screenshotPath": "./screenshots/moat-1772737093988-2kjk7nmvu.png",
+    "status": "done",
+    "timestamp": 1772737094057
+  },
+  {
+    "id": "40cf2baa-d0c7-4b16-9aa7-1a557609ed71",
+    "title": "Link: DO NOT SELL MY INFO",
+    "comment": "Remove this",
+    "selector": "#lnk-72d8a9d5",
+    "boundingRect": {
+      "x": 2217,
+      "y": 1622,
+      "w": 236,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737128505-zzolxrk8n.png",
+    "status": "done",
+    "timestamp": 1772737128577
+  },
+  {
+    "id": "29b415d5-4cf4-457b-ad49-abccdd9fa392",
+    "title": "Link: ACCESSIBILITY",
+    "comment": "Remove this",
+    "selector": "#lnk-f31d6f82",
+    "boundingRect": {
+      "x": 2501,
+      "y": 1622,
+      "w": 161,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737134451-tll4xx3cm.png",
+    "status": "done",
+    "timestamp": 1772737134525
+  },
+  {
+    "id": "e308a8a8-2a6d-46c6-9d06-90881feaee13",
+    "title": "Link: youtube",
+    "comment": "Reword and change this to \"Whatnot\"",
+    "selector": "#lnk-a598975a",
+    "boundingRect": {
+      "x": 2451,
+      "y": 1366,
+      "w": 104,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737157611-6xu0ym42b.png",
+    "status": "done",
+    "timestamp": 1772737157683
+  },
+  {
+    "id": "de29279e-d3c5-4024-9674-6d1e86437d40",
+    "title": "Container #w-node-a5e4f806-ebe7-5af0-0fab-1fe4fe1a7c0b-654d2164",
+    "comment": "Remove this whole section",
+    "selector": "#w-node-a5e4f806-ebe7-5af0-0fab-1fe4fe1a7c0b-654d2164",
+    "boundingRect": {
+      "x": 2080,
+      "y": 1184,
+      "w": 347,
+      "h": 303
+    },
+    "screenshotPath": "./screenshots/moat-1772737173410-ohq9qnnav.png",
+    "status": "done",
+    "timestamp": 1772737173489
+  },
+  {
+    "id": "7810ae01-790d-48e7-a4d7-96c5e692c03b",
+    "title": "Link: community",
+    "comment": "Change to Shop",
+    "selector": "#lnk-793f7dab",
+    "boundingRect": {
+      "x": 1709,
+      "y": 1269,
+      "w": 131,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737189962-baqqo3lie.png",
+    "status": "done",
+    "timestamp": 1772737190037
+  },
+  {
+    "id": "b5ffe16f-a40f-475d-b852-a5efb0dbe655",
+    "title": "Link: faq",
+    "comment": "Scroll going up on this page to the FAQ section",
+    "selector": "#lnk-ff80e4bc",
+    "boundingRect": {
+      "x": 1709,
+      "y": 1463,
+      "w": 44,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737227754-q0e63rp6g.png",
+    "status": "done",
+    "timestamp": 1772737227825
+  },
+  {
+    "id": "72ea824d-a4c1-4907-8e55-389fb2911960",
+    "title": "Link: help",
+    "comment": "Remove",
+    "selector": "#lnk-25ff6095",
+    "boundingRect": {
+      "x": 1709,
+      "y": 1414,
+      "w": 57,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737234379-iuekczj6v.png",
+    "status": "done",
+    "timestamp": 1772737234456
+  },
+  {
+    "id": "7b94f9e7-d161-40f0-928f-321b9440374a",
+    "title": "Link: community",
+    "comment": "Change to \"Whatnot\"",
+    "selector": "#lnk-e70c985a",
+    "boundingRect": {
+      "x": 1316,
+      "y": 168,
+      "w": 131,
+      "h": 42
+    },
+    "screenshotPath": "./screenshots/moat-1772737294602-9b5ou6y4e.png",
+    "status": "done",
+    "timestamp": 1772737294675
+  },
+  {
+    "id": "a5c75257-25d7-4828-aaf1-62a91b3e23b1",
+    "title": "Container #div-a9058dd2",
+    "comment": "Remove this menu item",
+    "selector": "#div-a9058dd2",
+    "boundingRect": {
+      "x": 1707,
+      "y": 168,
+      "w": 82,
+      "h": 42
+    },
+    "screenshotPath": "./screenshots/moat-1772737311473-y2h1rz73c.png",
+    "status": "done",
+    "timestamp": 1772737311546
+  },
+  {
+    "id": "e829e3b2-ea11-452d-b715-99a017b9fa45",
+    "title": "Link: how it works",
+    "comment": "This should bring them on the section of this page for \"How it works\"",
+    "selector": "#lnk-6561ea62",
+    "boundingRect": {
+      "x": 1495,
+      "y": 168,
+      "w": 164,
+      "h": 42
+    },
+    "screenshotPath": "./screenshots/moat-1772737339297-d2xqzaybg.png",
+    "status": "done",
+    "timestamp": 1772737339377
+  },
+  {
+    "id": "a2446d2e-30d8-4295-90ac-d6cb4e52e3f2",
+    "title": "Container #div-e52de8c2",
+    "comment": "Link to the quiz",
+    "selector": "#div-e52de8c2",
+    "boundingRect": {
+      "x": 2438,
+      "y": 180,
+      "w": 148,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1772737356650-s9cvx2si5.png",
+    "status": "done",
+    "timestamp": 1772737356727
   }
 ]
