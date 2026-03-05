@@ -7,24 +7,24 @@
 
   /* ---------- STEP DEFINITIONS ---------- */
   var STEPS = [
-    { id: 'qz-carousel', type: 'carousel', key: null, required: false },
-    { id: 'qz-q1', type: 'single-select', key: 'motivation', required: true },
-    { id: 'qz-q2', type: 'single-select', key: 'primaryStyle', required: true },
-    { id: 'qz-compliment', type: 'interstitial', key: null, required: false },
-    { id: 'qz-q3', type: 'single-select', key: 'bottomsFit', required: true },
-    { id: 'qz-q4', type: 'single-select', key: 'colorPreference', required: true },
-    { id: 'qz-q5', type: 'single-select', key: 'designPreference', required: true },
-    { id: 'qz-tip1', type: 'interstitial', key: null, required: false },
-    { id: 'qz-q6', type: 'single-select', key: 'topSize', required: true },
-    { id: 'qz-q7', type: 'dual-select', key: ['waistSize', 'pantLength'], required: true },
-    { id: 'qz-q8', type: 'single-select', key: 'shoeSize', required: true },
-    { id: 'qz-q9', type: 'dual-slider', key: ['height', 'weight'], required: true },
-    { id: 'qz-tip2', type: 'interstitial', key: null, required: false },
-    { id: 'qz-q10', type: 'multi-select', key: 'brands', required: false, max: 6 },
-    { id: 'qz-q11', type: 'text-input', key: 'email', required: true, validation: 'email' },
-    { id: 'qz-q12', type: 'text-input', key: 'phone', required: false },
-    { id: 'qz-q13', type: 'text-input', key: 'birthday', required: false },
-    { id: 'qz-summary', type: 'results', key: null, required: false },
+    { id: 'qz-welcome', type: 'carousel', key: null, required: false },
+    { id: 'qz-motivation', type: 'single-select', key: 'motivation', required: true },
+    { id: 'qz-signal', type: 'single-select', key: 'primaryStyle', required: true },
+    { id: 'qz-confidence', type: 'interstitial', key: null, required: false },
+    { id: 'qz-silhouette', type: 'single-select', key: 'bottomsFit', required: true },
+    { id: 'qz-energy', type: 'single-select', key: 'colorPreference', required: true },
+    { id: 'qz-expression', type: 'single-select', key: 'designPreference', required: true },
+    { id: 'qz-checkpoint', type: 'interstitial', key: null, required: false },
+    { id: 'qz-comfort', type: 'single-select', key: 'topSize', required: true },
+    { id: 'qz-proportion', type: 'dual-select', key: ['waistSize', 'pantLength'], required: true },
+    { id: 'qz-finish', type: 'single-select', key: 'shoeSize', required: true },
+    { id: 'qz-blueprint', type: 'dual-slider', key: ['height', 'weight'], required: true },
+    { id: 'qz-precision', type: 'interstitial', key: null, required: false },
+    { id: 'qz-premium', type: 'multi-select', key: 'brands', required: false, max: 6 },
+    { id: 'qz-connect', type: 'text-input', key: 'email', required: true, validation: 'email' },
+    { id: 'qz-vip', type: 'text-input', key: 'phone', required: false },
+    { id: 'qz-upgrade', type: 'text-input', key: 'birthday', required: false },
+    { id: 'qz-results', type: 'results', key: null, required: false },
     { id: 'qz-plans', type: 'results', key: null, required: false }
   ];
 
@@ -158,15 +158,42 @@
     // Update Next button state
     updateNextButton(index);
 
-    // Compliment: show the right variant
-    if (step.id === 'qz-compliment') {
+    // Compliment: show the right variant + trigger drop animation
+    if (step.id === 'qz-confidence') {
       renderCompliment();
+      // Trigger drop animation on the visible variant's tip-stack
+      setTimeout(function () {
+        var visibleVariant = document.querySelector('.qz-compliment-variant[style*="display"]:not([style*="none"]), .qz-compliment-variant:not([style*="display"])');
+        if (!visibleVariant) visibleVariant = document.querySelector('.qz-compliment-variant');
+        if (visibleVariant) {
+          var stack = visibleVariant.querySelector('.qz-tip-stack');
+          if (stack) {
+            var imgs = stack.querySelectorAll('.qz-tip-drop');
+            imgs.forEach(function (img) { img.classList.remove('animate'); img.style.opacity = '0'; img.style.transform = 'translateY(-80px)'; });
+            setTimeout(function () { if (imgs[0]) imgs[0].classList.add('animate'); }, 300);
+            setTimeout(function () { if (imgs[1]) imgs[1].classList.add('animate'); }, 2300);
+            setTimeout(function () { if (imgs[2]) imgs[2].classList.add('animate'); }, 4300);
+            setTimeout(function () { if (imgs[3]) imgs[3].classList.add('animate'); }, 6300);
+          }
+        }
+      }, 50);
     }
 
     // Summary: render dynamic content + submit to Zapier
-    if (step.id === 'qz-summary') {
+    if (step.id === 'qz-results') {
       renderSummary();
       submitToZapier();
+    }
+
+    // Tip 1: trigger drop-stacking animation
+    if (step.id === 'qz-checkpoint') {
+      var tipStack = document.getElementById('div-tip1-stack');
+      if (tipStack) {
+        var imgs = tipStack.querySelectorAll('.qz-tip-drop');
+        imgs.forEach(function (img) { img.classList.remove('animate'); img.style.opacity = '0'; img.style.transform = 'translateY(-80px)'; });
+        setTimeout(function () { if (imgs[0]) imgs[0].classList.add('animate'); }, 200);
+        setTimeout(function () { if (imgs[1]) imgs[1].classList.add('animate'); }, 2200);
+      }
     }
 
     // Restore selections from state
@@ -468,7 +495,7 @@
   /* ---------- COMPLIMENT RENDERER ---------- */
   function renderCompliment() {
     var style = state.answers.primaryStyle || 'streetwear';
-    var variants = document.querySelectorAll('#qz-compliment .qz-compliment-variant');
+    var variants = document.querySelectorAll('#qz-confidence .qz-compliment-variant');
     variants.forEach(function (v) {
       v.style.display = v.getAttribute('data-style') === style ? 'block' : 'none';
     });

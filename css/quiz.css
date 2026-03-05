@@ -597,6 +597,48 @@ body {
   border-radius: 12px;
 }
 
+/* Carousel slide images: transparent container, no border */
+[id^="qz-slide-img-"] {
+  background: transparent;
+  border: none;
+}
+
+/* Tip drop-stacking animation */
+@keyframes tipDrop {
+  0% { opacity: 0; transform: translateY(-80px) rotate(-3deg); }
+  60% { opacity: 1; transform: translateY(8px) rotate(1deg); }
+  80% { transform: translateY(-3px) rotate(0deg); }
+  100% { opacity: 1; transform: translateY(0) rotate(0deg); }
+}
+
+.qz-tip-drop.animate {
+  animation: tipDrop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Compliment section: wider content to fit 600px images */
+#qz-confidence .qz-step-content {
+  max-width: 640px;
+}
+
+.qz-compliment-variant {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Tighten gap between image stack and label/text */
+.qz-compliment-variant .qz-question-label {
+  margin-top: 12px !important;
+}
+
+#qz-confidence .qz-subtext {
+  margin-top: 8px;
+}
+
+/* Tip 2: wider content for 700px circle image */
+#qz-precision .qz-step-content {
+  max-width: 740px;
+}
+
 /* Tip/Compliment images */
 .qz-feature-img {
   width: 100%;
@@ -607,13 +649,13 @@ body {
 }
 
 /* --- Carousel (Swiper overrides) --- */
-#qz-carousel .swiper {
+#qz-welcome .swiper {
   width: 100%;
   max-width: var(--qz-max-width);
   overflow: hidden;
 }
 
-#qz-carousel .swiper-slide {
+#qz-welcome .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -621,22 +663,22 @@ body {
   padding: 0 8px;
 }
 
-#qz-carousel .swiper-pagination {
+#qz-welcome .swiper-pagination {
   position: relative;
   bottom: auto;
   margin-top: 24px;
 }
 
-#qz-carousel .swiper-pagination-bullet {
+#qz-welcome .swiper-pagination-bullet {
   background: var(--qz-border);
   opacity: 1;
 }
 
-#qz-carousel .swiper-pagination-bullet-active {
+#qz-welcome .swiper-pagination-bullet-active {
   background: var(--qz-accent);
 }
 
-#qz-carousel .qz-carousel-text {
+#qz-welcome .qz-carousel-text {
   font-size: 14px;
   color: var(--qz-text-light);
   line-height: 1.6;
@@ -649,7 +691,7 @@ body {
   width: 100%;
   max-width: var(--qz-max-width);
   background: var(--qz-card-bg);
-  border: 1px solid var(--qz-border);
+  border: none;
   border-radius: 16px;
   overflow: hidden;
 }

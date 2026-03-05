@@ -1,6 +1,6 @@
 # Moat Tasks
 
-**Total**: 103 | **To Do**: 0 | **Doing**: 1 | **Done**: 102
+**Total**: 123 | **To Do**: 0 | **Doing**: 0 | **Done**: 123
 
 ## Tasks
 
@@ -106,9 +106,29 @@
 100. [x] Image: Haul of Fame – "Increase the site by 250px width with fix ration" `div.qz-step-content > div.qz-logo:nth-child(1) > img`
 101. [x] Link: CLAIM DEAL + STArT QUIZ – "Lets link here the quiz" `#w-node-_248186b7-224a-4be8-d5c9-368d009288ff-e5bcab26`
 102. [x] Container #div-a2e4cd4a – "Remove the profile icons and link the quiz here" `#div-a2e4cd4a`
-103. [~] Container #w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869 – "using gemini-image-gen, generate 3 images replacing the 3..." `#w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869`
+103. [x] Container #w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869 – "using gemini-image-gen, generate 3 images replacing the 3..." `#w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869`
+104. [x] Container #w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869 – "replace the 3 images on this section with the effortlessl..." `#w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869`
+105. [x] Container #div-f5ebd9e9 – "replace images of plans using the pricingPlan_hof, as, st..." `#div-f5ebd9e9`
+106. [x] Container #qz-slide-img-1 – "replace image place holder of ones ready in the img folde..." `#qz-slide-img-1`
+107. [x] Container #qz-slide-img-1 – "replace image using the cs_1 - 6 located at img folder." `#qz-slide-img-1`
+108. [x] Image: Brand Network – "Lets remove the container box or make it transparent wito..." `#qz-slide-img-1 > img`
+109. [x] Colored Container – "Replace image here with image QZ_tip1.png but i need anim..." `#qz-tip1 > div.qz-step-content > div.qz-img-placeholder`
+110. [x] Colored Container – "Move the image photo animation here from Task 109, then i..." `div.qz-step-content > div.qz-compliment-variant:nth-child(2) > div.qz-img-placeholder`
+111. [x] Colored Container – "Remove the container or make it transparent without borde..." `#qz-tip2 > div.qz-step-content > div.qz-img-placeholder`
+112. [x] Colored Container – "Make the container transparent or use the image QZ_summar..." `div.qz-step-content > div.qz-summary-card > div.qz-summary-hero:nth-child(1)`
+113. [x] Image: Streetwear Style – "Make the image bigger around 600px width and the image st..." `#div-compliment-stack > img.qz-tip-drop.animate:nth-child(1)`
+114. [x] Image: Fit Tip – "The container is hiding the full circle png, Make the con..." `div.qz-step-content > div.qz-img-placeholder > img`
+115. [x] Background Container – "Remove the thin border around from the container" `div.qz-step-content > div.qz-summary-card > div.qz-summary-hero:nth-child(1)`
+116. [x] Image: Streetwear Vibes – "The word streetwear is behind the images, adjust the text..." `#div-compliment-stack > img.qz-tip-drop.animate:nth-child(2)`
+117. [x] Image: Streetwear Vibes – "There are 2 more images inside the img folder with simila..." `#div-compliment-stack > img.qz-tip-drop.animate:nth-child(2)`
+118. [x] Container #div-compliment-stack – "The image stacking should be on top of each other and mak..." `#div-compliment-stack`
+119. [x] Freeform Rectangle Task – "The image animation is now perfect, we just need to adjus..." `freeform`
+120. [x] Container – "Andd the image QZ_tip6.png from img folder here between t..." `#qz-tip1 > div.qz-step-content`
+121. [x] Container #div-compliment-stack – "This has some empty space at the bottom. Reduce the exces..." `#div-compliment-stack`
+122. [x] Image: Fit Tip – "Make this circle image larger around 700px" `div.qz-step-content > div.qz-img-placeholder > img`
+123. [x] Input (email): Your email – "This email field should be required and wont proceed till..." `#qz-email-input`
 
 ---
 
-_Generated: 3/4/2026, 1:19:41 AM_
+_Generated: 3/6/2026, 2:55:08 AM_
 _Source: moat-tasks-detail.json_

@@ -1689,7 +1689,332 @@
       "h": 1006
     },
     "screenshotPath": "./screenshots/moat-1772556018625-a9p6ka07a.png",
-    "status": "doing",
+    "status": "done",
     "timestamp": 1772556018732
+  },
+  {
+    "id": "60beeddd-ec4e-4529-8402-8424df612550",
+    "title": "Container #w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869",
+    "comment": "replace the 3 images on this section with the effortlesslyyours_1, 2, 3 in the img folder",
+    "selector": "#w-node-_2cb97d91-bac8-81de-b626-40e18653a8a1-8653a869",
+    "boundingRect": {
+      "x": 1283,
+      "y": 343,
+      "w": 878,
+      "h": 1006
+    },
+    "screenshotPath": "./screenshots/moat-1772559936371-2ysiumgda.png",
+    "status": "done",
+    "timestamp": 1772559936462
+  },
+  {
+    "id": "27d83675-3230-4a4a-876c-ad3c04b08f8c",
+    "title": "Container #div-f5ebd9e9",
+    "comment": "replace images of plans using the pricingPlan_hof, as, starter, rookie respectively.",
+    "selector": "#div-f5ebd9e9",
+    "boundingRect": {
+      "x": 547,
+      "y": -173,
+      "w": 2300,
+      "h": 2197
+    },
+    "screenshotPath": "./screenshots/moat-1772567119577-t9yle7hsb.png",
+    "status": "done",
+    "timestamp": 1772567119668
+  },
+  {
+    "id": "e35e6825-7e98-4d4e-9aba-24eb35402b13",
+    "title": "Container #qz-slide-img-1",
+    "comment": "replace image place holder of ones ready in the img folder named \"cs_1 - 6\"",
+    "selector": "#qz-slide-img-1",
+    "boundingRect": {
+      "x": 1100,
+      "y": 475,
+      "w": 360,
+      "h": 360
+    },
+    "screenshotPath": "./screenshots/moat-1772568606947-zuxrkovr7.png",
+    "status": "done",
+    "timestamp": 1772568607017
+  },
+  {
+    "id": "0be92f73-ebe3-4e72-bae3-4f1cd9a0623c",
+    "title": "Container #qz-slide-img-1",
+    "comment": "replace image using the cs_1 - 6 located at img folder.",
+    "selector": "#qz-slide-img-1",
+    "boundingRect": {
+      "x": 1100,
+      "y": 475,
+      "w": 360,
+      "h": 360
+    },
+    "screenshotPath": "./screenshots/moat-1772727368278-plqdrarj1.png",
+    "status": "done",
+    "timestamp": 1772727368344
+  },
+  {
+    "id": "ac42bbc4-8b46-4d3a-8ff7-303c4abf5237",
+    "title": "Image: Brand Network",
+    "comment": "Lets remove the container box or make it transparent witout border",
+    "selector": "#qz-slide-img-1 > img",
+    "boundingRect": {
+      "x": 1101,
+      "y": 476,
+      "w": 358,
+      "h": 358
+    },
+    "screenshotPath": "./screenshots/moat-1772727755429-obx6iovzy.png",
+    "status": "done",
+    "timestamp": 1772727755495
+  },
+  {
+    "id": "96324ee0-6f3c-4485-8c5e-5213fb22bd81",
+    "title": "Colored Container",
+    "comment": "Replace image here with image QZ_tip1.png but i need animation entrance that drops from above and land into the page in ease. Then another image QZ_tip2.png will drop the same animation after 2 sec. Making it like a dropping picture stacking each other",
+    "selector": "#qz-tip1 > div.qz-step-content > div.qz-img-placeholder",
+    "boundingRect": {
+      "x": 1130,
+      "y": 226,
+      "w": 300,
+      "h": 400
+    },
+    "screenshotPath": "./screenshots/moat-1772728711977-15a3lfbkk.png",
+    "status": "done",
+    "timestamp": 1772728712045
+  },
+  {
+    "id": "d051fbc2-c79d-4b6e-bb5c-96fc77118ca5",
+    "title": "Colored Container",
+    "comment": "Move the image photo animation here from Task 109, then its not playing upon switch on this segment.",
+    "selector": "div.qz-step-content > div.qz-compliment-variant:nth-child(2) > div.qz-img-placeholder",
+    "boundingRect": {
+      "x": 1200,
+      "y": 237,
+      "w": 159,
+      "h": 119
+    },
+    "screenshotPath": "./screenshots/moat-1772728991201-ix9mwsrfo.png",
+    "status": "done",
+    "timestamp": 1772728991272
+  },
+  {
+    "id": "37e778e8-601e-4b29-be36-96b49310f180",
+    "title": "Colored Container",
+    "comment": "Remove the container or make it transparent without border and use the image QZ_tip5.png to replace here",
+    "selector": "#qz-tip2 > div.qz-step-content > div.qz-img-placeholder",
+    "boundingRect": {
+      "x": 1130,
+      "y": 226,
+      "w": 300,
+      "h": 400
+    },
+    "screenshotPath": "./screenshots/moat-1772729263247-ewk5jbixu.png",
+    "status": "done",
+    "timestamp": 1772729263315
+  },
+  {
+    "id": "6a820f93-8f58-4658-ac84-a4dea493d661",
+    "title": "Colored Container",
+    "comment": "Make the container transparent or use the image QZ_summary1.png from the img folder",
+    "selector": "div.qz-step-content > div.qz-summary-card > div.qz-summary-hero:nth-child(1)",
+    "boundingRect": {
+      "x": 1024,
+      "y": 81,
+      "w": 498,
+      "h": 240
+    },
+    "screenshotPath": "./screenshots/moat-1772729378583-igcu3v1v5.png",
+    "status": "done",
+    "timestamp": 1772729378648
+  },
+  {
+    "id": "7b906d3f-e0b4-44b7-81ff-2ff55bf01d7d",
+    "title": "Image: Streetwear Style",
+    "comment": "Make the image bigger around 600px width and the image stacking falls behind. It needs to be in front",
+    "selector": "#div-compliment-stack > img.qz-tip-drop.animate:nth-child(1)",
+    "boundingRect": {
+      "x": 1221,
+      "y": 217,
+      "w": 117,
+      "h": 106
+    },
+    "screenshotPath": "./screenshots/moat-1772729646006-8am3bue2t.png",
+    "status": "done",
+    "timestamp": 1772729646070
+  },
+  {
+    "id": "290c55f3-b9e2-4742-9b90-bb2341030e2a",
+    "title": "Image: Fit Tip",
+    "comment": "The container is hiding the full circle png, Make the container larger or make the container display the image in full as overflow",
+    "selector": "div.qz-step-content > div.qz-img-placeholder > img",
+    "boundingRect": {
+      "x": 1130,
+      "y": 226,
+      "w": 300,
+      "h": 400
+    },
+    "screenshotPath": "./screenshots/moat-1772729738205-7eskjtvfu.png",
+    "status": "done",
+    "timestamp": 1772729738273
+  },
+  {
+    "id": "c5c8f9c6-b9cc-4a41-8f68-a212704342fe",
+    "title": "Background Container",
+    "comment": "Remove the thin border around from the container",
+    "selector": "div.qz-step-content > div.qz-summary-card > div.qz-summary-hero:nth-child(1)",
+    "boundingRect": {
+      "x": 1024,
+      "y": 81,
+      "w": 498,
+      "h": 240
+    },
+    "screenshotPath": "./screenshots/moat-1772729766598-px4br960y.png",
+    "status": "done",
+    "timestamp": 1772729766665
+  },
+  {
+    "id": "b81fe0c1-f9ad-406f-919a-4af503fabe77",
+    "title": "Image: Streetwear Vibes",
+    "comment": "The word streetwear is behind the images, adjust the text at the bottom for visibilty",
+    "selector": "#div-compliment-stack > img.qz-tip-drop.animate:nth-child(2)",
+    "boundingRect": {
+      "x": 690,
+      "y": 211,
+      "w": 540,
+      "h": 489
+    },
+    "screenshotPath": "",
+    "status": "done",
+    "timestamp": 1772731450914
+  },
+  {
+    "id": "6787b04e-4a45-4f79-9da4-ec0aa886e6d5",
+    "title": "Image: Streetwear Vibes",
+    "comment": "There are 2 more images inside the img folder with similar names, QZ_tip3 and 4, do the similar animation on them and add them on the stack",
+    "selector": "#div-compliment-stack > img.qz-tip-drop.animate:nth-child(2)",
+    "boundingRect": {
+      "x": 690,
+      "y": 211,
+      "w": 540,
+      "h": 489
+    },
+    "screenshotPath": "",
+    "status": "done",
+    "timestamp": 1772731498169
+  },
+  {
+    "id": "fec29ba7-be13-4704-826a-d2311a81e543",
+    "title": "Container #div-compliment-stack",
+    "comment": "The image stacking should be on top of each other and make sure the size is still consistent. Drops should trigger every 2 secs",
+    "selector": "#div-compliment-stack",
+    "boundingRect": {
+      "x": 653,
+      "y": 175,
+      "w": 600,
+      "h": 800
+    },
+    "screenshotPath": "",
+    "status": "done",
+    "timestamp": 1772731758233
+  },
+  {
+    "id": "c0ae97dd-2b13-463d-817f-da407bd5a282",
+    "title": "Freeform Rectangle Task",
+    "comment": "The image animation is now perfect, we just need to adjust the text to move up a little bit up",
+    "selector": "freeform",
+    "boundingRect": {
+      "x": 868,
+      "y": 55,
+      "w": 794,
+      "h": 1108
+    },
+    "screenshotPath": "./screenshots/moat-1772731942301-8x8v21qkc.png",
+    "status": "done",
+    "timestamp": 1772731942371,
+    "boundingBox": {
+      "xyxy": {
+        "x1": 868,
+        "y1": 55,
+        "x2": 1662,
+        "y2": 1163
+      },
+      "xywh": {
+        "x": 868,
+        "y": 55,
+        "width": 794,
+        "height": 1108
+      },
+      "normalized": {
+        "x": 0.3390625,
+        "y": 0.043273013375295044,
+        "width": 0.31015625,
+        "height": 0.8717545239968528
+      },
+      "viewport": {
+        "width": 2560,
+        "height": 1271
+      },
+      "type": "freeform"
+    }
+  },
+  {
+    "id": "3b8063fd-526f-4fc6-b4a7-a5185aa576e2",
+    "title": "Container",
+    "comment": "Andd the image QZ_tip6.png from img folder here between the the heading and text",
+    "selector": "#qz-tip1 > div.qz-step-content",
+    "boundingRect": {
+      "x": 1030,
+      "y": 80,
+      "w": 500,
+      "h": 1051
+    },
+    "screenshotPath": "./screenshots/moat-1772732425444-03cbww76r.png",
+    "status": "done",
+    "timestamp": 1772732425509
+  },
+  {
+    "id": "9d6c4361-612a-4a55-b972-15e34ec6fefe",
+    "title": "Container #div-compliment-stack",
+    "comment": "This has some empty space at the bottom. Reduce the excess space just to put the text upward",
+    "selector": "#div-compliment-stack",
+    "boundingRect": {
+      "x": 973,
+      "y": 165,
+      "w": 600,
+      "h": 800
+    },
+    "screenshotPath": "./screenshots/moat-1772733732574-k7vibm5n0.png",
+    "status": "done",
+    "timestamp": 1772733732646
+  },
+  {
+    "id": "8d527901-cb7e-4519-8085-a38f90953093",
+    "title": "Image: Fit Tip",
+    "comment": "Make this circle image larger around 700px",
+    "selector": "div.qz-step-content > div.qz-img-placeholder > img",
+    "boundingRect": {
+      "x": 1100,
+      "y": 226,
+      "w": 360,
+      "h": 360
+    },
+    "screenshotPath": "./screenshots/moat-1772733761838-ofdnd99of.png",
+    "status": "done",
+    "timestamp": 1772733761906
+  },
+  {
+    "id": "3b70993f-70dd-4849-8dcb-aa5f1cde05b7",
+    "title": "Input (email): Your email",
+    "comment": "This email field should be required and wont proceed till its filled",
+    "selector": "#qz-email-input",
+    "boundingRect": {
+      "x": 1030,
+      "y": 299,
+      "w": 500,
+      "h": 45
+    },
+    "screenshotPath": "./screenshots/moat-1772733784862-s81766gus.png",
+    "status": "done",
+    "timestamp": 1772733784926
   }
 ]
